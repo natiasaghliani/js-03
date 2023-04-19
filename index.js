@@ -49,3 +49,12 @@ const multifly = newNumbers.reduce((accumulator, currentValue) => accumulator * 
 
 console.log(multifly);
 
+
+//დავალება 4 (მოცემულია სტრინგების მასივი, სადაც ყველა სიმბოლო დაწერილია აფერქეისით [ 'HELLO', 'WORLD', 'JS', 'GEOLAB' და ა.შ.], თქვენ გევალებათ აღნიშნული ერეიდან მიიღოთ ერთი სტრიქონი
+//capitalCase (ყოველი სიტყვის პირველი სიმბოლო იყოს აფერქეისი, დანარჩენი ლოვერქეისი) ით დაწერილი. შედეგი იქნება შემდეგი Hello World Js Geolab)
+
+const words = ['MUSHNI', 'LOVES', 'NATIA', 'THE', 'MOST'];
+
+const love = words.join(' ').toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+console.log(love);
